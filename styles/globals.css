@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  .print\:hidden {
+    display: none !important;
+  }
+  body, .bg-slate-50, .bg-white {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .lg\:col-span-8 {
+    width: 100% !important;
+  }
+}
